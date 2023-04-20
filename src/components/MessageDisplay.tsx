@@ -1,7 +1,13 @@
 type Props = {};
 
 const MessageDisplay = (props: Props) => {
-  return <div className="message-display"></div>;
+  return (
+    <div className="message-display">
+      <p>X</p>
+      <p>user</p>
+      <p>message</p>
+    </div>
+  );
 };
 
 export default MessageDisplay;
