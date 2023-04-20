@@ -24,6 +24,9 @@ input {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .code-display {
@@ -70,6 +73,17 @@ input {
   overflow-y: scroll;
 }
 
+::-webkit-scrollbar {
+  -webkit-animation: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
 .message-display {
   width: 100%;
   display: flex;
@@ -77,4 +91,16 @@ input {
   box-sizing: border-box;
   background-color: rgb(250, 250, 250);
   margin: 5px 0;
+}
+
+p#icon {
+  padding: 0 7px;
+}
+
+input {
+  margin: 2%;
+  padding: 16px;
+  border: solid rgba(0, 0, 0, 0.16) 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
