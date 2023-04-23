@@ -38,7 +38,7 @@ const App = () => {
     }
   };
 
-  // console.log(chat);
+  console.log(chat);
 
   const filteredUserMessages = chat.filter(
     (message) => message.role === "user"
